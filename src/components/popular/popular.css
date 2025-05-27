@@ -4,6 +4,7 @@
   align-items: center;
   gap: 10px;
   height: 90vh;
+  margin-bottom: 180px;
 }
 
 .popular h1 {
@@ -23,4 +24,12 @@
   margin-top: 50px;
   display: flex;
   gap: 30px;
+}
+
+.offers-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 50px;
 }
