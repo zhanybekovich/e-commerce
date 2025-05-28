@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./components/navbar/Navbar";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Shop from "./pages/Shop";
 import ShopCategory from "./pages/ShopCategory";
@@ -10,12 +10,13 @@ import Footer from "./components/footer/Footer";
 import men_banner from "./components/assets/banner_mens.png";
 import women_banner from "./components/assets/banner_women.png";
 import kids_banner from "./components/assets/banner_kids.png";
+import Header from "./components/header/Header";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navbar />
+        <Header />
         <Routes>
           <Route path="/" element={<Shop />} />
           <Route
