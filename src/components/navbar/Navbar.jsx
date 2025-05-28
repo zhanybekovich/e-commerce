@@ -1,9 +1,9 @@
 import "./navbar.css";
 import logo from "../assets/logo.png";
-import cart_icon from "../assets/cart_icon.png";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../context/shopContext";
+import { FaCartShopping } from "react-icons/fa6";
 
 function Navbar() {
   const [menu, setMenu] = useState("shop");
@@ -13,7 +13,7 @@ function Navbar() {
     <div className="navbar">
       <div className="nav-logo">
         <img src={logo} alt="logo" />
-        <p>SHOPPER</p>
+        <p>SHOPPIX</p>
       </div>
       <ul className="nav-menu">
         <li
@@ -63,7 +63,7 @@ function Navbar() {
         </Link>
 
         <Link to="/cart">
-          <img src={cart_icon} alt="" />
+          <FaCartShopping className="nav-cart-icon" />
         </Link>
 
         <div className="nav-cart-count">{getTotalCartItems()}</div>
